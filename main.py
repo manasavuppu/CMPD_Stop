@@ -3,6 +3,7 @@ import matplotlib as plt
 import pandas as pd
 
 st.write('cmpd traffic stops')
+st.write('Salvatore Colandrea was here! :)')
 
 @st.cache_data
 def load_data(csv):
