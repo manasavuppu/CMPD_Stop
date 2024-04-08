@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt 
+import seaborn as sns
 
 @st.cache_data
 def load_data(csv):
@@ -18,3 +19,6 @@ plt.ylabel('Frequency')
 plt.title('Histogram')
 
 st.pyplot(plt)
+
+# Adding a violin plot!
+sns.violinplot(data=stops, x="Was_a_Search_Conducted", y='Driver_Age')
